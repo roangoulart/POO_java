@@ -1,6 +1,6 @@
-# Atividades de POO ADS SENAI - 2º ano
+# Atividades de POO ADS SENAI
 
-## Repositorio dedicado às atividades de POO do 2º ano da faculdade
+## Repositório dedicado às atividades de POO da faculdade
 
 - Lógica de Programação ✅
 - Java ✅
