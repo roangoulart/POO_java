@@ -1,0 +1,57 @@
+package modelo;
+
+public class Movimentacao {
+
+	private int tipo;
+	private double valor;
+	private String dataDeDeposito;
+	private String dataDeSaque;
+	private String titularDaConta;
+
+	public String getTitularDaConta() {
+		return titularDaConta;
+	}
+
+	public void setTitularDaConta(String titularDaConta) {
+		this.titularDaConta = titularDaConta;
+	}
+
+	public int getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(int tipo) {
+		this.tipo = tipo;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+
+	public String getDataDeDeposito() {
+		return dataDeDeposito;
+	}
+
+	public void setDataDeDeposito(String dataDeposito) {
+		this.dataDeDeposito = dataDeposito;
+	}
+
+	public String getDataDeSaque() {
+		return dataDeSaque;
+	}
+
+	public void setDataDeSaque(String dataDeSaque) {
+		this.dataDeSaque = dataDeSaque;
+	}
+
+	public void novaMovimentacao(String titularDaConta, String tipoConta, String dataDeposito, String dataSaque) {
+		Movimentacao movimentacao = new Movimentacao();
+		movimentacao.setTitularDaConta(titularDaConta);
+
+	}
+
+}

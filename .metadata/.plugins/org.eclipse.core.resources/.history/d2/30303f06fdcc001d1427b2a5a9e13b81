@@ -1,0 +1,54 @@
+package modelo;
+
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+public class Conta {
+
+	private String titularDaConta;
+	private int tipo;
+	private double saldo;
+	private int saque;
+	private int deposito;
+	ArrayList<Movimentacao> listaDeMovimentacao = new ArrayList<>();
+	private Conta conta = new Conta();
+
+	private int getDeposito() {
+		return deposito;
+	}
+
+	private void setDeposito(int deposito) {
+		this.deposito = deposito;
+	}
+
+	private int getSaque() {
+		return saque;
+	}
+
+	private void setSaque(int saque) {
+		this.saque = saque;
+	}
+
+	private double getSaldo() {
+		return saldo;
+	}
+
+	private void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+
+	public static void depositar() {
+
+	}
+
+	public static void exibirSaldo() {
+		JOptionPane.showMessageDialog(null, "Seu saldo é " + getSaldo(double saldo), "Saldo" ,JOptionPane.INFORMATION_MESSAGE);
+	}
+
+	public static String exibirDadosDaConta(String titularDaConta, int tipo, double saldo) {
+
+		return JOptionPane.showMessageDialog(null, "Titular da Conta: " + titularDaConta + "\n Tipo de Conta: " + tipo + "\n Saldo: " + saldo, "Dados da Conta", JOptionPane.INFORMATION_MESSAGE);
+	}
+	
+}

@@ -1,0 +1,14 @@
+
+public class Divisao {
+	
+	private double num1;
+	private double num2;
+	
+	public double calculaDivisao(double num1, double num2) {
+
+		double divi = num1 / num2;
+
+		return divi;
+	}
+
+}

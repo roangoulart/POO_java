@@ -1,0 +1,21 @@
+package controle;
+
+import modelo.Fabrica;
+import modelo.Carro;
+
+public class Controladora {
+
+	private Fabrica fabrica = new Fabrica();
+	private Carro carro = new Carro();
+	
+	public void exibeMenu() {
+		
+		int opcao;
+		
+		do {
+			opcao = EntradaSaida.solicitaOpcao();
+		}while (opcao != 3);
+		
+	}
+	
+}

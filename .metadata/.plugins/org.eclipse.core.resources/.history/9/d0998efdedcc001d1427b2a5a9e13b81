@@ -1,0 +1,37 @@
+package controle;
+
+import visualizacao.EntradaSaida;
+
+public class Controladora {
+
+	private Conta conta = new Conta();
+
+	public static void exibeMenu() {
+		
+		int opcao;
+		double saldo
+		
+		do {
+			opcao = EntradaSaida.solicitaOpcao();
+			
+			swtich (opcao) {
+				case 0:
+					int depositar = EntradaSaida.solicitarInformacoesDeposito();
+		
+					saldo = depositar + saldo;
+					break;
+				case 1:
+					int saque = EntradaSaida.solicitarInformacoesSaque();
+					
+					saldo = saque - saldo;
+					break;
+				case 2:
+					
+					
+					break;
+				
+			}
+		}
+	}
+
+}

@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+public class Fabrica {
+
+	private ArrayList<Carros> listaDeCarros = new ArrayList<Carros>();
+
+	public void quantosCarros() {
+		JOptionPane.showMessageDialog("Deseja fabricar quantos carros?");
+	}
+
+	public void venderCarro(ArrayLista<Carros> listaDeCarros) {
+		listaDeCarros = -1;
+		return listaDeCarros;
+	}
+
+	public int fabricarCarro(ArrayLista<Carros> listaDeCarros) {
+		listaDeCarros = +1;
+		return listaDeCarros;
+	}
+
+}

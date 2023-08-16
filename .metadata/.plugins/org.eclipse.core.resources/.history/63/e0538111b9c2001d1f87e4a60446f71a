@@ -1,0 +1,17 @@
+package visualizacao;
+
+import javax.swing.JComboBox;
+
+public class EntradaSaida {
+
+	public static int solicitaOpcao()
+	
+	String[] opcoes = {"1 - Fabricar carro", "2 - Vender carro", "3 - Verificar estoque", "4 - Encerrar"};
+	
+	JComboBox<String> menu = new JComboBox<String>(opcoes);
+	
+	JOptionPane.showConfirmDialog(null, menu, "Selecione a opção desejada", JOptionPane_OK_CANCEL_OPTION);
+	
+	return menu.getSelectedIndex();
+
+}

@@ -1,0 +1,14 @@
+
+public class Multiplicacao {
+
+	private double num1;
+	private double num2;
+	
+	public double calculaMultiplicacao(double num1, double num2) {
+
+		double mult = num1 * num2;
+
+		return mult;
+	}
+	
+}

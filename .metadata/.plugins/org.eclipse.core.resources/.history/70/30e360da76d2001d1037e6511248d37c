@@ -1,0 +1,68 @@
+package modelo;
+
+import java.util.ArrayList;
+
+public class Conta {
+
+	private String titularDaConta;
+	private int tipo;
+	private double saldo = 0;
+	private ArrayList<Movimentacao> listaMovimentacoes;
+	private int fullYear;
+	private int date;
+	private int month;
+
+	public static double depositar(double saldo, double depositar) {
+		saldo = depositar + saldo;
+		return saldo;
+	}
+
+	public static double sacar(double saldo, double saque) {
+		saldo = saque - saldo;
+		return saldo;
+	}
+
+	public String getTitularDaConta() {
+		return titularDaConta;
+	}
+
+	public void setTitularDaConta(String titularDaConta) {
+		this.titularDaConta = titularDaConta;
+	}
+	
+	public int getFullYear() {
+		return fullYear;
+	}
+	
+	public void setFullYear(int fullYear) {
+		this.fullYear = fullYear;
+	}
+	
+	public int getDate() {
+		return date;
+	}
+	
+	public void setDate(int date) {
+		this.date = date;
+	}
+	
+	public int getMoth() {
+		return month;
+	}
+	
+	public void setMonth(int month) {
+		this.month = month;
+	}
+
+	public void gerarExtrato() {
+	}
+
+	private void gerarExtratoDepositos() {
+
+	}
+
+	private void gerarExtratoSaques() {
+
+	}
+
+}

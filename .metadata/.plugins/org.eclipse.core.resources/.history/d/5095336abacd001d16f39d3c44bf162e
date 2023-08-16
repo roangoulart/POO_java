@@ -1,0 +1,58 @@
+package modelo;
+
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+import controle.Controladora;
+import visualizacao.EntradaSaida;
+
+public class Conta {
+
+	protected String titularDaConta;
+	protected int tipo;
+	private double saldo;
+	protected int saque;
+	private int deposito;
+	protected String dadosDaConta;
+	protected double extrato;
+	ArrayList<Movimentacao> listaDeMovimentacao = new ArrayList<>();
+
+	public static int depositar() {
+		saldo = deposito + saldo;
+		return deposito;
+	}
+
+	public int sacar() {
+		saldo = saque - saldo;
+		return saque;
+	}
+
+	public void gerarSaldo() {
+
+	}
+
+	public void gerarDadosDaConta() {
+	}
+
+	public void gerarExtrato() {
+	}
+
+	private void gerarExtratoDepositos() {
+
+	}
+
+	private void gerarExtratoSaques() {
+
+	}
+
+	/*private int getDepositar() {
+		return deposito;
+	}
+	 private void setDepositar(int deposito) { this.deposito = deposito; }
+	 
+	  
+	  private void setSacar(int saque) { this.saque = saque; }
+	  
+	  private void setGerarSaldo(double saldo) { this.saldo = saldo; }
+	  */
+	 
+}

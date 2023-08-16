@@ -1,0 +1,17 @@
+import controle.Controladora;
+import visualizacao.EntradaSaida;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String descricao = "";
+
+		Controladora controladora = new Controladora();
+		
+		if (descricao == "") {
+		controladora.exibeMenu();
+		}
+	}
+}

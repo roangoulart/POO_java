@@ -1,0 +1,64 @@
+package controle;
+
+import visualizacao.EntradaSaida;
+import modelo.Conta;
+
+public class Controladora {
+
+	private Conta Movimentacao = new Conta();
+
+	public static void exibeMenu() {
+
+		int opcao;
+		int saldo = 0;
+		double saldoCorrente = 0;
+		double saldoPoupanca = 0;
+		int tipo;
+		String titularDaConta;
+		String dadosDaConta;
+		int depositar;
+
+		do {
+			opcao = EntradaSaida.solicitaOpcao();
+
+			switch (opcao) {
+			case 0:
+				tipo = EntradaSaida.solicitarTipoDeConta();
+				
+				switch (tipo) {
+				case 0:
+				depositar = EntradaSaida.solicitarInformacoesDeposito();
+				saldoCorrente = Conta.depositarCorrente(depositar, saldoCorrente);
+				break;
+				
+				case 1:
+					depositar = EntradaSaida.solicitarInformacoesDeposito();
+					saldoPoupanca = Conta.depositar(depositar, saldoPoupanca);
+					break;
+				}
+				break;
+
+			/*
+			 * case 1: int saque = EntradaSaida.solicitarInformacoesSaque();
+			 * 
+			 * saldo = saque - saldo; break;
+			 * 
+			 * case 2: EntradaSaida.exibirSaldo(saldo);
+			 * 
+			 * break;
+			 * 
+			 * 
+			 * case 3:
+			 * 
+			 * EntradaSaida.exibirDadosDaConta(titularDaConta, tipo, saldo); break; case 4:
+			 * 
+			 * break; case 5:
+			 * 
+			 * break; case 6:
+			 * 
+			 * break;
+			 */
+			}
+		} while (opcao != 7);
+	}
+}

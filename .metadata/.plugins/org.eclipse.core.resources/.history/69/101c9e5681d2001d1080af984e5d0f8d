@@ -1,0 +1,49 @@
+package modelo;
+
+import java.util.ArrayList;
+
+public class Conta {
+
+	private String titularDaConta;
+	private int tipo;
+	private double saldo = 0;
+	private ArrayList<Movimentacao> listaMovimentacoes;
+	private String data;
+
+	public static double depositar(double saldo, double depositar) {
+		saldo = depositar + saldo;
+		return saldo;
+	}
+
+	public static double sacar(double saldo, double saque) {
+		saldo = saque - saldo;
+		return saldo;
+	}
+
+	public String getTitularDaConta() {
+		return titularDaConta;
+	}
+
+	public void setTitularDaConta(String titularDaConta) {
+		this.titularDaConta = titularDaConta;
+	}
+	
+	public String getData() {
+		return data;
+	}
+	
+	public void serData(String data) {
+		this.data = data;
+	}
+	public void gerarExtrato() {
+	}
+
+	private void gerarExtratoDepositos() {
+
+	}
+
+	private void gerarExtratoSaques() {
+
+	}
+
+}

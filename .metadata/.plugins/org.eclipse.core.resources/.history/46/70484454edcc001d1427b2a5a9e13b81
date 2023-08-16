@@ -1,0 +1,32 @@
+package controle;
+
+public class Controladora {
+
+	private Conta conta = new Conta();
+
+	public static void exibeMenu() {
+		
+		int opcao;
+		
+		do {
+			opcao = EntradaSaida.solicitaOpcao();
+			
+			swtich (opcao) {
+				case 0:
+					
+					
+					break;
+				case 1:
+					
+					
+					break;
+				case 2:
+					
+					
+					break;
+				
+			}
+		}
+	}
+
+}

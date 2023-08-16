@@ -1,0 +1,14 @@
+
+public class Fabrica {
+
+	private ArrayList<Carros> listaDeCarros = new ArrayList<Carros>();
+	
+	public void venderCarro() {
+		
+	}
+	
+	public int fabricarCarro() {
+		
+	}
+	
+}

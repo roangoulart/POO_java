@@ -1,0 +1,8 @@
+package controle;
+
+public class Controladora {
+
+	private Fabrica fabrica = new Fabrica();
+	private Carro carro = new Carro();
+	
+}

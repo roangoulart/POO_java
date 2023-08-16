@@ -1,0 +1,66 @@
+package controle;
+
+import visualizacao.EntradaSaida;
+import modelo.Conta;
+import javax.swing.JOptionPane;
+
+public class Controladora {
+
+	private Conta Movimentacao = new Conta();
+
+	public static void exibeMenu() {
+
+		int opcao = 0;
+		int tipo = 0;
+		String tipoConta = "";
+		String titularDaConta;
+		String dadosDaConta;
+		String dataTransferencia;
+		int saldo = 0;
+
+		titularDaConta = EntradaSaida.solicitarTitular();
+		tipo = EntradaSaida.solicitarTipoDeConta();
+		if (tipo == 1) {
+			tipoConta = "Conta Poupança";
+		} else if (tipo == 2) {
+			tipoConta = "Conta Poupança";
+		}
+
+	do
+
+	{
+		int saque = 0;
+		int depositar = 0;
+		opcao = EntradaSaida.solicitaOpcao();
+
+		switch (opcao) {
+		case 0:
+			depositar = EntradaSaida.solicitarInformacoesDeposito();
+			saldo = Conta.depositar(depositar, saldo);
+			dataTransferencia = EntradaSaida.solicitarData();
+			break;
+
+		case 1:
+			saque = EntradaSaida.solicitarInformacoesSaque();
+			saldo = Conta.sacar(saque, saldo);
+			dataTransferencia = EntradaSaida.solicitarData();
+			break;
+
+		case 2:
+			EntradaSaida.exibirSaldo(saldo);
+			break;
+		/*
+		 * 
+		 * case 3:
+		 * 
+		 * EntradaSaida.exibirDadosDaConta(titularDaConta, tipo, saldo); break; case 4:
+		 * 
+		 * break; case 5:
+		 * 
+		 * break; case 6:
+		 * 
+		 * break;
+		 */
+		}
+	}while(opcao!=7);
+}}

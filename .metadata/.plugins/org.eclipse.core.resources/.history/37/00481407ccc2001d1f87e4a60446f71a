@@ -1,0 +1,17 @@
+package modelo;
+
+import java.util.ArrayList;
+
+public class Fabrica {
+
+	ArrayList<Carro> carrosFab = new ArrayList<>();
+
+	public void fabricarCarro(String modelo, String cor) {
+
+		Carro carro = new Carro();
+		carro.setModelo(modelo);
+		carro.setCor(modelo);
+		carrosFab.add(carro);
+	}
+
+}

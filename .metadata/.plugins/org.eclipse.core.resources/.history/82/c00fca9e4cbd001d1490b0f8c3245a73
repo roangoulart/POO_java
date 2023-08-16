@@ -1,0 +1,69 @@
+import java.util.ArrayList;
+
+import javax.swing.JOptionPane;
+
+import modelo.Aberturas;
+
+public class Fabrica {
+
+	private int anoCarro;
+	private String modelo;
+	private String cor;
+
+	private ArrayList<Carros> listaDeCarros = new ArrayList<Carros>();
+
+	public String getAnoCarro() {
+		return anoCarro;
+	}
+
+	public void setAnoCarro(int anoCarro) {
+		this.anoCarro = anoCarro;
+	}
+
+	public String getModelo() {
+		return modelo;
+	}
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+	public String getAnoCor() {
+		return cor;
+	}
+
+	public void setAnoCarro(String cor) {
+		this.cor = cor;
+	}
+
+	public ArrayList<Carros> getListaDeCarros() {
+		return listaDeCarros;
+	}
+
+	public void setListaDeCarros(ArrayList<Carros> listaDeCarros) {
+		this.listaDeCarros = listaDeCarros;
+	}
+
+	public void quantosCarros(int quantidade) {
+		JOptionPane.showMessageDialog(null, "Deseja fabricar quantos carros?" + quantidade);
+
+	}
+
+	public void venderCarro(ArrayLista<Carros> listaDeCarros) {
+		listaDeCarros = -1;
+		return listaDeCarros;
+	}
+
+	public int fabricarCarro(ArrayLista<Carros> listaDeCarros) {
+		listaDeCarros = +1;
+		return listaDeCarros;
+	}
+
+	public ArrayLista<Carros> getListaDeCarros() {
+		return listaDeCarros;
+	}
+
+	public void setListaDeCarros(ArrayLista<Carros> listaDeCarros) {
+		this.listaDeCarros = listaDeCarros;
+	}
+}

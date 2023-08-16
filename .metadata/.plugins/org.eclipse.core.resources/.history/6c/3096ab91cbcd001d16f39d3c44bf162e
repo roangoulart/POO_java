@@ -1,0 +1,74 @@
+package controle;
+
+import visualizacao.EntradaSaida;
+import modelo.Conta;
+
+public class Controladora {
+
+	private Conta Movimentacao = new Conta();
+
+	public static void exibeMenu() {
+
+		int opcao = 0;
+		int tipo = 0;
+		int contaCorrente = 0;
+		int contaPoupanca = 0;
+		String titularDaConta = "";
+		String dadosDaConta = "";
+		int depositar;
+		int saque = 0;
+		int saldo = 0;
+
+		do {
+			opcao = EntradaSaida.solicitaOpcao();
+
+			switch (opcao) {
+			case 0:
+				tipo = EntradaSaida.solicitarTipoDeConta();
+				if (tipo == 1) {
+					depositar = EntradaSaida.solicitarInformacoesDeposito();
+					saldo = Conta.depositar(depositar, saldo);
+					contaCorrente = saldo;
+				} else {
+					depositar = EntradaSaida.solicitarInformacoesDeposito();
+					saldo = Conta.sacar(saque, saldo);
+					contaPoupanca = saldo;
+				}
+				break;
+
+			case 1:
+				tipo = EntradaSaida.solicitarTipoDeConta();
+				if (tipo == 1) {
+					saque = EntradaSaida.solicitarInformacoesSaque();
+					saldo = Conta.sacar(saque, saldo);
+					contaCorrente = saldo;
+				} else if (tipo == 2) {
+					saque = EntradaSaida.solicitarInformacoesSaque();
+					saldo = Conta.sacar(saque, saldo);
+					contaPoupanca = saldo;
+				} else {
+					JOptionPane.showMessageDialog(null, "Opção não encontrada", "Erro",
+							JOptionPane.INFORMATION_MESSAGE);
+				}
+				break;
+
+			/*
+			 * case 2: EntradaSaida.exibirSaldo(saldo);
+			 * 
+			 * break;
+			 * 
+			 * 
+			 * case 3:
+			 * 
+			 * EntradaSaida.exibirDadosDaConta(titularDaConta, tipo, saldo); break; case 4:
+			 * 
+			 * break; case 5:
+			 * 
+			 * break; case 6:
+			 * 
+			 * break;
+			 */
+			}
+		} while (opcao != 7);
+	}
+}

@@ -1,0 +1,14 @@
+
+public class Soma {
+	
+	private double num1;
+	private double num2;
+
+	public double calculaSoma() {
+
+		double soma = num1 + num2;
+
+		return soma;
+	}
+	
+}

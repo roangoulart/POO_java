@@ -1,0 +1,25 @@
+package Controle;
+
+import javax.swing.JOptionPane;
+import visualizacao.EntradaSaida;
+import modelo;
+
+public class Controladora {
+
+	private Casa casa = null;
+	
+	public void exibeMenu() {
+		
+		int opcao;
+		
+		do {
+			
+			opcao = EntradaSaida.SolicitaOpcao();
+			
+			
+			
+		}
+		
+	}
+	
+}

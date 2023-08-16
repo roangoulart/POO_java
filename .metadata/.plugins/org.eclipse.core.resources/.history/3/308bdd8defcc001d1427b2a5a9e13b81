@@ -1,0 +1,17 @@
+package modelo;
+
+import java.util.ArrayList;
+
+public class Conta {
+	
+	private String titularDaConta;
+	private int tipo;
+	private double saldo;
+	ArrayList<Movimentacao> listaDeMovimentacao = new ArrayList<>();
+	
+	public static void depositar() {
+		
+		
+	}
+
+}

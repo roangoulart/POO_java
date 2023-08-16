@@ -1,0 +1,123 @@
+package modelo;
+
+import java.util.ArrayList;
+
+public class Conta {
+
+	private String titularDaConta;
+	private int tipoConta;
+	private double saldo = 0;
+	private ArrayList<Movimentacao> listaMovimentacoes;
+	private String data;
+	private static double depositar;
+	private static double saque;
+	private String dataDeposito;
+	private String dataSaque;
+	private String informacoes;
+
+	public void setTitularDaConta(String titularDaConta) {
+		this.titularDaConta = titularDaConta;
+	}
+
+	public void sacar() {
+		Movimentacao movimentacao = new Movimentacao();
+
+		movimentacao.setTipoMovimentacao(EntradaSaida.solicitarTipoMov());
+		movimentacao.setValor(EntradaSaida.solicitarValor());
+		movimentacao.setData(EntradaSaida.solicitarData());
+		listaDeMovimentacao.add(movimentacao);
+
+		this.saldo -= movimentacao.getValor();
+	}
+
+	public void setTipo(int tipoConta) {
+		this.tipoConta = tipoConta;
+	}
+
+	public static double getDepositar() {
+		return depositar;
+	}
+
+	public void setDepositar(double depositar) {
+		this.depositar = depositar;
+	}
+
+	public static double getSaque() {
+		return saque;
+	}
+
+	public void setSaque(double saque) {
+		this.saque = saque;
+	}
+
+	public String getDataDeposito() {
+		return dataDeposito;
+	}
+
+	public void setDataDeposito(String dataDeposito) {
+		this.dataDeposito = dataDeposito;
+	}
+
+	public String getDataSaque() {
+		return dataSaque;
+	}
+
+	public void setDataSaque(String dataSaque) {
+		this.dataSaque = dataSaque;
+	}
+
+	/*
+	 * public String gerarExtrato(String tipoConta, int opcao) {
+	 * 
+	 * informacoes = " Titular da Conta: " + this.titularDaConta +
+	 * "\n Tipo da Conta: " + tipoConta + "\n" + "======================" +
+	 * "\n Movimentação \n" + "============";
+	 * 
+	 * for (int i = 0; i < listaMovimentacoes.size(); i++) { Movimentacao m =
+	 * listaMovimentacoes.get(i);
+	 * 
+	 * if(m.getOpcao() == 1) {
+	 * 
+	 * } }
+	 * 
+	 * }
+	 */
+
+	public static double depositar(double saldo, double depositar) {
+		saldo = depositar + saldo;
+		return saldo;
+	}
+
+	public static double sacar(double saldo, double saque) {
+		saldo = saque - saldo;
+		return saldo;
+	}
+
+	public String getTitularDaConta() {
+		return titularDaConta;
+	}
+
+	public void setTitularDaConta(String titularDaConta) {
+		this.titularDaConta = titularDaConta;
+	}
+
+	public String getData() {
+		return data;
+	}
+
+	public void setData(String data) {
+		this.data = data;
+	}
+
+	public void gerarExtrato() {
+	}
+
+	private void gerarExtratoDepositos() {
+
+	}
+
+	private void gerarExtratoSaques() {
+
+	}
+
+}
