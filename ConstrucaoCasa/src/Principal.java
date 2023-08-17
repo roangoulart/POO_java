@@ -7,6 +7,6 @@ public class Principal {
 
 		Controladora controladora = new Controladora();
 
-			controladora.exibeMenu();
+		controladora.exibeMenu();
 	}
 }

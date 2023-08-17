@@ -1,3 +1,4 @@
 package modelo;
 
-public class Porta extends Aberturas { }
+public class Porta extends Aberturas {
+}

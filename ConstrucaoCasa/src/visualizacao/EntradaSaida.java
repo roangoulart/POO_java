@@ -16,7 +16,7 @@ public class EntradaSaida {
 
 		return menu.getSelectedIndex();
 	}
-	
+
 	public static int solicitaOpcao2() {
 
 		String[] opcoes = { "Construir casa" };
@@ -25,7 +25,6 @@ public class EntradaSaida {
 
 		return menu.getSelectedIndex();
 	}
-
 
 	public static void exibeMsgEncerraPrograma() {
 
@@ -93,7 +92,7 @@ public class EntradaSaida {
 	public static void exibeMsgAbertura() {
 		JOptionPane.showMessageDialog(null, "Nenhuma abertura será movimentada");
 	}
-	
+
 	public static void exibeInfoCasa(String informacoes) {
 		JOptionPane.showMessageDialog(null, informacoes, "Informações da casa", JOptionPane.INFORMATION_MESSAGE);
 	}
